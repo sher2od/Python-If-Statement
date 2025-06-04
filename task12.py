@@ -1,9 +1,14 @@
-password1 = input()
-password2 = input()
+from getpass import getpass
 
-if password1 == password2:
-    print("Parol togri")
+currect_password = "1234"
+
+current_password = getpass()
+
+if currect_password == current_password:
+    print("sayitga kirdi")
 
 
 else:
-    print("afsuski parol xato")
+    print("password xato")
+
+
